@@ -1,0 +1,13 @@
+spring:
+  application:
+    name: ratelimiter
+  redis:
+    database: 0
+    host:
+    port:
+    password:
+
+server:
+  port: 10800
+logging:
+  file: log/${spring.application.name}.log
