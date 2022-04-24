@@ -1,6 +1,6 @@
 spring:
   application:
-    name: ratelimiter
+    name: rate-limiter
   redis:
     database: 0
     host:
