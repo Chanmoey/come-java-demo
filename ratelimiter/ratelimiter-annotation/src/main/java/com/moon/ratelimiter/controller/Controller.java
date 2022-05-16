@@ -13,7 +13,7 @@ import org.springframework.web.bind.annotation.RestController;
 @RequestMapping("/limiter")
 public class Controller {
 
-    @Limiter(limit = 1, key = "test")
+    @Limiter(limit = 2, key = "test")
     @GetMapping("/test")
     public String limit() {
         return "success";
