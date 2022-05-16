@@ -3,9 +3,9 @@ spring:
     name: rate-limiter
   redis:
     database: 0
-    host:
-    port:
-    password:
+    host: 192.168.124.10 # your ip
+    port: 6379 # your port
+    password: redis # your redis password
 
 server:
   port: 10800
