@@ -55,4 +55,17 @@ class RenameFileTest {
         FileOperation renameFile = new RenameFile(renameRule);
         renameFile.renameAllFileInDir("E:\\学校相关\\TSP");
     }
+
+    @Test
+    void customRuleTest() {
+        FileOperation renameFile = new RenameFile(new RenameRule() {
+            @Override
+            public void rename(File file) {
+                if (file.isFile()) {
+                    System.out.println(file.getName());;
+                }
+            }
+        });
+        renameFile.renameAllFileInDir("com/moon/renamefile/exception");
+    }
 }
